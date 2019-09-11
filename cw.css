@@ -1,0 +1,64 @@
+/*styling for all elements*/
+body{
+    font-family: sans-serif;
+}
+/*grid styling*/
+.container{
+    margin: 0 5% 0 5%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+/*styling for all element in container*/
+.header, .main, .sidebar, .twin1, .twin2, .footer{
+    padding: 1%;
+    margin: 1%;
+    border: 1px solid gray;
+    text-align: center;
+}
+/*header styling and grid positioning*/
+.header{
+    grid-column: 1/13;
+    grid-row: 1;
+}
+/*header background styling*/
+.defaultBG{
+    background-color: lightblue;
+}
+/*main content styling and grid positioning*/
+.main{
+    grid-column: 3/8;
+    grid-row: 2;
+    background: lightgreen;
+}
+/*sidebar styling and grid positioning*/
+.sidebar{
+    grid-column: 8/11;
+    grid-row: 2;
+    background: plum;
+}
+/*twin1 styling and grid positioning*/
+.twin1{
+    grid-column: 3/7;
+    grid-row: 3;
+    background: coral;
+}
+/*twin2 styling and grid positioning*/
+.twin2{
+    grid-column: 7/11;
+    grid-row: 3;
+    background: coral;
+}
+/*footer styling and grid positioning*/
+.footer{
+    grid-column: 1/13;
+    grid-row: 4;
+    background: cornflowerblue;
+}
+/*blue background to be added via classList*/
+.blueBG{
+    background-color: blue;
+}
+/*red background to be added via classList*/
+.redBG{
+    background-color: red;
+}
